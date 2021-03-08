@@ -1,0 +1,58 @@
+/*----------------------------------------------------------------------------*\
+    BUTTON
+\*----------------------------------------------------------------------------*/
+
+/*  Variables
+\*----------------------------------------------------------------------------*/
+
+
+/*  Component
+\*----------------------------------------------------------------------------*/
+
+.button {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 2rem;
+    background-color: color(brand);
+    cursor: pointer;
+    border: color(brand);
+    outline: none;
+    z-index: 1;
+    text-decoration: none;
+    padding: 1.6rem 3.3rem;
+    color: #ffffff;
+    letter-spacing: 0;
+    transition: all .3s ease-out;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: #FFFFFF;
+            color: color(brand);
+            border: 0.1rem solid  color(brand);
+        }
+    }
+    @include media-query(lg) {
+        font-size: 2rem;
+    }
+    &.button--open{
+        background-color: #FFFFFF;
+        color: color(brand);
+        font-weight: 500;
+        font-family: $font-base;
+        border: 0.1rem solid  color(brand);
+        &:hover{
+            background-color: color(brand);
+            color: #FFFFFF;
+        }
+    }
+
+    &.button--primary {
+        background-color: color(brand);
+        color: #FFFFFF;
+
+
+    }
+}
+

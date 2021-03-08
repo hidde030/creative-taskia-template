@@ -1,0 +1,75 @@
+/*----------------------------------------------------------------------------*\
+    TYPOGRAPHY
+\*----------------------------------------------------------------------------*/
+
+/*  Variables
+\*----------------------------------------------------------------------------*/
+
+$link-color-default:		#000;
+$link-color-hover:			#333;
+$link-color-active:			#000;
+$link-color-visited:		#000;
+
+$link-decoration-default:	underline;
+$link-decoration-hover:		none;
+$link-decoration-active: 	underline;
+$link-decoration-visited: 	underline;
+
+/*  HEADINGS
+\*----------------------------------------------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-heading;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 7rem;
+    line-height:9.7rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+// Links
+a:not(.button) {
+    // Default
+    color: $link-color-default;
+    text-decoration: $link-decoration-default;
+
+    // Hover
+    &:hover {
+        color: $link-color-hover;
+        text-decoration: $link-decoration-hover;
+    }
+
+    // Active
+    &:active {
+        color: $link-color-active;
+        text-decoration: $link-decoration-active;
+    }
+
+    // Visited
+    &:visited {
+        color: $link-color-visited;
+        text-decoration: $link-decoration-visited;
+    }
+}
+
+p{
+    font-family: $font-base;
+}

@@ -12,12 +12,9 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-4-grid@3.4.0/css/grid.min.css");
 
-
 //BASE
 @import "base/typography";
 @import "base/button";
-
-
 
 // Variables
 @import "variables";
@@ -26,12 +23,19 @@
 @import "layout/header";
 @import "layout/hero";
 // Blocks
+@import "blocks/tasks";
 
 
 /* ------- BODY ------- */
 html {
     font-size: 62.5%;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 body {
     font-size: 1.6rem;
     padding-top: $header-height; // Setup in layout/header
@@ -47,5 +51,18 @@ p {
 
     &:last-of-type {
         margin-bottom: 0;
+    }
+}
+
+
+section.info-management {
+h2{
+    margin-bottom: 0rem;
+}
+    .description{
+        color: color(grey);
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin-bottom: 3.9rem;
     }
 }

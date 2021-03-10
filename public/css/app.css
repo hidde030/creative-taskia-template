@@ -62,6 +62,7 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   margin-bottom: 3rem;
+  margin-top: 0;
 }
 
 h1 {
@@ -70,8 +71,8 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
-  line-height: 3.6rem;
+  font-size: 5rem;
+  line-height: 6rem;
 }
 
 h3 {
@@ -130,6 +131,7 @@ p {
   color: #ffffff;
   letter-spacing: 0;
   transition: all 0.3s ease-out;
+  font-family: "Poppins", sans-serif;
 }
 @media (hover: hover) {
   .button:hover {
@@ -498,6 +500,7 @@ p {
 
 section.hero {
   font-family: "Poppins", sans-serif;
+  padding-bottom: 30rem;
 }
 section.hero .column {
   width: 100%;
@@ -525,7 +528,7 @@ section.hero form input[type=text] {
   margin-right: 4rem;
   transition: all 0.3s;
 }
-section.hero form input[type=text]:focus {
+section.hero form input[type=text]:focus, section.hero form input[type=text]:hover {
   outline: none;
   border: 1px solid #525FFB;
   opacity: 1;
@@ -547,9 +550,93 @@ section.hero .image {
   height: auto;
 }
 
+.task-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 6rem 5.5rem 3rem 4rem;
+  border-radius: 1.1rem;
+  color: #000000;
+}
+.task-card img {
+  width: 100%;
+  height: auto;
+}
+.task-card .task-card__title {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-top: 0;
+}
+.task-card .task-card__description {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+section.tasks {
+  padding-bottom: 30rem;
+}
+section.tasks .row:nth-child(2) {
+  padding-top: 7rem;
+}
+section.tasks .column:nth-child(1) .task-card {
+  background-color: #525FFB;
+  color: #fff;
+}
+section.tasks .column:nth-child(2) .task-card {
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+  --float-start: 0;
+  --float-end: 9rem;
+  background-color: #E9F0FF;
+}
+section.tasks .column:nth-child(3) .task-card {
+  -webkit-animation: float 6s ease infinite;
+          animation: float 6s ease infinite;
+  --float-start: 0;
+  --float-end: 3rem;
+  background-color: #FFE7AA;
+}
+section.tasks h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes float {
+  0% {
+    transform: translatey(var(--float-start));
+  }
+  50% {
+    transform: translatey(var(--float-end));
+  }
+  100% {
+    transform: translatey(var(--float-start));
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(var(--float-start));
+  }
+  50% {
+    transform: translatey(var(--float-end));
+  }
+  100% {
+    transform: translatey(var(--float-start));
+  }
+}
 /* ------- BODY ------- */
 html {
   font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -568,4 +655,14 @@ p {
 }
 p:last-of-type {
   margin-bottom: 0;
+}
+
+section.info-management h2 {
+  margin-bottom: 0rem;
+}
+section.info-management .description {
+  color: #B1AAAA;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-bottom: 3.9rem;
 }

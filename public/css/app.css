@@ -587,8 +587,8 @@ section.tasks .column:nth-child(1) .task-card {
   color: #fff;
 }
 section.tasks .column:nth-child(2) .task-card {
-  -webkit-animation: float 6s ease-in-out infinite;
-          animation: float 6s ease-in-out infinite;
+  -webkit-animation: float 6s ease infinite;
+          animation: float 6s ease infinite;
   --float-start: 0;
   --float-end: 9rem;
   background-color: #E9F0FF;
@@ -658,7 +658,7 @@ p:last-of-type {
 }
 
 section.info-management h2 {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 section.info-management .description {
   color: #B1AAAA;

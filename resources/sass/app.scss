@@ -68,3 +68,43 @@ section.info-management {
         margin-bottom: 1.9rem;
     }
 }
+
+.description {
+    color: color(grey);
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 1.9rem;
+}
+
+
+section.team {
+    padding-top: 40rem;
+
+    h2 {
+        margin-bottom: 0;
+        font-size: 4rem;
+    }
+
+    .phone-company {
+        width: 100%;
+        display: flex;
+        a{
+            padding-top: 4rem;
+            height: auto;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        a:last-of-type{
+           img{
+                padding-left: 4rem;
+            }
+        }
+
+
+
+    }
+}
+
+

@@ -82,7 +82,25 @@
             </div>
         </div>
     </section>
-
+    <section class="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h2>
+                        Seamless Team Workflow & Efficient
+                    </h2>
+                    <p class="description">Do you waste time organizing sticky notes, searching your email and apps for
+                        to-dos, and figuring out what to work on first? Then you need one solution to prioritize your
+                        tasks, manage your time, and meet your deadlines.</p>
+                </div>
+                <div class="phone-company">
+                    <a href="#"><img src="{{url('/img/apple.png')}}" alt="apple"></a>
+                    <a href="#"><img src="{{url('/img/android.png')}}" alt="android"></a>
+                </div>
+                <div class="col-md-6 col-12"></div>
+            </div>
+        </div>
+    </section>
 
 
 @endsection

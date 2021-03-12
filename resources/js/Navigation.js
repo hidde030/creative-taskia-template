@@ -38,3 +38,5 @@ if($(window).width() < 1024) { // Tablet landscape and below
     });
 
 }
+
+

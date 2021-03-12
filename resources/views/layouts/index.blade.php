@@ -14,7 +14,6 @@
 <main>
     @yield('content')
 </main>
-<script src="{{ asset('js/jquery.js')}}"></script>
 <script defer src="js/app.js"></script>
 </body>
 

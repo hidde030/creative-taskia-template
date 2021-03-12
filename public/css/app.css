@@ -168,6 +168,10 @@ p {
 \*----------------------------------------------------------------------------*/
 /*  Component
 \*----------------------------------------------------------------------------*/
+.header--active {
+  box-shadow: 0 0 0.9rem 0.3rem rgba(41, 41, 41, 0.25);
+}
+
 .header {
   width: 100%;
   height: 7.5rem;
@@ -178,7 +182,7 @@ p {
   right: 0;
   background-color: #fff;
   z-index: 9999999;
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
 }
 @media only screen and (min-width: 992px) {
   .header {
@@ -500,6 +504,7 @@ p {
 
 section.hero {
   font-family: "Poppins", sans-serif;
+  padding-top: 12rem;
   padding-bottom: 30rem;
 }
 section.hero .column {

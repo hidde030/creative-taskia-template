@@ -664,10 +664,11 @@ p:last-of-type {
 
 section.info-management h2 {
   margin-bottom: 0;
+  font-size: 4rem;
 }
 section.info-management .description {
   color: #B1AAAA;
   font-size: 1.8rem;
   line-height: 3rem;
-  margin-bottom: 3.9rem;
+  margin-bottom: 1.9rem;
 }

@@ -56,13 +56,15 @@ p {
 
 
 section.info-management {
-h2{
-    margin-bottom: 0;
-}
-    .description{
+    h2 {
+        margin-bottom: 0;
+        font-size: 4rem;
+    }
+
+    .description {
         color: color(grey);
         font-size: 1.8rem;
         line-height: 3rem;
-        margin-bottom: 3.9rem;
+        margin-bottom: 1.9rem;
     }
 }

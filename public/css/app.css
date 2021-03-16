@@ -555,6 +555,45 @@ section.hero .image {
   height: auto;
 }
 
+footer.footer {
+  padding: 16rem 0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+footer.footer .row {
+  justify-content: center;
+}
+footer.footer form {
+  display: flex;
+  border-radius: 2.5rem;
+  margin-top: 6rem;
+}
+footer.footer form input[type=text] {
+  border-radius: 2rem;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  border: 0.1rem solid #EBEBEB;
+  color: rgba(30, 28, 36, 0.36);
+  margin-right: 4rem;
+  transition: all 0.3s;
+}
+footer.footer form input[type=text]:focus, footer.footer form input[type=text]:hover {
+  outline: none;
+  border: 1px solid #525FFB;
+  opacity: 1;
+}
+footer.footer form input[type=text]:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: rgba(30, 28, 36, 0.36);
+}
+footer.footer form input[type=text]::-moz-placeholder {
+  color: rgba(30, 28, 36, 0.36);
+}
+footer.footer form input[type=text]::placeholder {
+  color: rgba(30, 28, 36, 0.36);
+}
+
 .task-card {
   display: flex;
   justify-content: center;
@@ -688,7 +727,6 @@ section.team h2 {
   font-size: 4rem;
 }
 section.team .phone-company {
-  width: 100%;
   display: flex;
 }
 section.team .phone-company a {
@@ -696,9 +734,39 @@ section.team .phone-company a {
   height: auto;
 }
 section.team .phone-company a img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 section.team .phone-company a:last-of-type img {
   padding-left: 4rem;
+}
+
+section.service {
+  padding-top: 20rem;
+  background-color: lightblue;
+  padding-bottom: 24rem;
+}
+section.service .container {
+  position: relative;
+}
+section.service h2 {
+  text-align: center;
+  transform: scale(0.9);
+}
+section.service p {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 15rem;
+  line-height: 1;
+  color: #525FFB;
+  text-align: center;
+}
+section.service .bubble {
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  left: 0;
+  top: 0;
 }

@@ -22,6 +22,7 @@
 // LAYOUT
 @import "layout/header";
 @import "layout/hero";
+@import "layout/footer";
 // Blocks
 @import "blocks/tasks";
 
@@ -86,25 +87,59 @@ section.team {
     }
 
     .phone-company {
-        width: 100%;
         display: flex;
-        a{
+
+        a {
             padding-top: 4rem;
             height: auto;
-            img{
-                height: 100%;
+
+            img {
+                height: auto;
                 width: 100%;
             }
         }
-        a:last-of-type{
-           img{
+
+        a:last-of-type {
+            img {
                 padding-left: 4rem;
             }
         }
-
 
 
     }
 }
 
 
+section.service {
+    padding-top: 20rem;
+    background-color: lightblue;
+    padding-bottom: 24rem;
+    .container {
+        position: relative;
+    }
+
+    h2 {
+        text-align: center;
+        transform: scale(.9);
+    }
+
+    p {
+        height: 100%;
+        font-family: "Poppins", sans-serif;
+        font-size: 15rem;
+        line-height: 1;
+        color: color(brand);
+        text-align: center;
+    }
+
+    .bubble {
+        border-radius: 50%;
+        opacity: 1;
+        position: absolute;
+        width: 14rem;
+        height: 14rem;
+        left: 0;
+        top: 0;
+    }
+
+}

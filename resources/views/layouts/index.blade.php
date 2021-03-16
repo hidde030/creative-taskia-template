@@ -14,6 +14,7 @@
 <main>
     @yield('content')
 </main>
+@include('includes.footer')
 <script defer src="js/app.js"></script>
 </body>
 

@@ -92,14 +92,35 @@
                     <p class="description">Do you waste time organizing sticky notes, searching your email and apps for
                         to-dos, and figuring out what to work on first? Then you need one solution to prioritize your
                         tasks, manage your time, and meet your deadlines.</p>
+
+                    <div class="phone-company">
+                        <a href="#"><img src="{{url('/img/apple.png')}}" alt="apple"></a>
+                        <a href="#"><img src="{{url('/img/android.png')}}" alt="android"></a>
+                    </div>
                 </div>
-                <div class="phone-company">
-                    <a href="#"><img src="{{url('/img/apple.png')}}" alt="apple"></a>
-                    <a href="#"><img src="{{url('/img/android.png')}}" alt="android"></a>
+                <div class="col-md-6 col-12">
+                    <img src="{{url('/img/team.png')}}" alt="team">
                 </div>
-                <div class="col-md-6 col-12"></div>
             </div>
         </div>
+    </section>
+
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><h2>Trust us and feel free to try our service</h2></div>
+                <div class="col-12"><p>100000</p>
+                </div>
+            </div>
+
+            <img src="{{url('/img/bubble.png')}}" alt="" class="bubble">
+            <img src="{{url('/img/bubble.png')}}" alt="" class="bubble">
+            <img src="{{url('/img/bubble.png')}}" alt="" class="bubble">
+            <img src="{{url('/img/bubble.png')}}" alt="" class="bubble">
+            <img src="{{url('/img/bubble.png')}}" alt="" class="bubble">
+            <img src="{{url('/img/bubble.png')}}" alt="" class="bubble">
+        </div>
+
     </section>
 
 
